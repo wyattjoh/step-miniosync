@@ -1,17 +1,19 @@
 box: wercker/default
 
 build:
+
   steps:
+
     - shellcheck:
       files: run.sh
 
     - script:
-      name: install
-      code: |
-        wget https://dl.minio.io/client/mc/release/linux-amd64/mc
-        chmod +x mc
-        mv mc $WERCKER_ROOT/mc
+        name: install
+        code: |
+          wget https://dl.minio.io/client/mc/release/linux-amd64/mc
+          chmod +x mc
+          mv mc $WERCKER_ROOT/mc
 
     - script:
-      name: version
-      code: $WERCKER_ROOT/mc version
+        name: version
+        code: $WERCKER_ROOT/mc version
