@@ -1,5 +1,5 @@
 name: miniosync
-version: 1.0.2
+version: 1.0.3
 description: Sync folders with a remote minio bucket.
 properties:
   alias:
