@@ -1,0 +1,26 @@
+name: miniosync
+version: 1.0.0
+description: Sync folders with a remote minio bucket.
+properties:
+  alias:
+    type: string
+    required: true
+  url:
+    type: string
+    required: true
+  access_key:
+    type: string
+    required: true
+  secret_key:
+    type: string
+    required: true
+  flags:
+    type: string
+    required: false
+    default: ""
+  src:
+    type: string
+    required: true
+  dst:
+    type: string
+    required: true
